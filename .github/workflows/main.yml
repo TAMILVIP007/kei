@@ -1,4 +1,4 @@
-name : kei
+name : NekoChan
 
 
 on:
@@ -33,7 +33,7 @@ jobs:
        - name: cloning repo and install
          continue-on-error: true
          run: |
-           git clone https://tamilvip007:${{ secrets.GIT_TOKEN }}@github.com/Tamilvip007/keichan kei && cd kei && pip3 install -r requirements.txt
+           git clone https://tamilvip007:${{ secrets.GIT_TOKEN }}@github.com/Tamilvip007/NekoChan neko && cd neko && pip3 install -r requirements.txt
            pwd
        - name: Running
          timeout-minutes: 350
@@ -41,5 +41,5 @@ jobs:
          run: |
            curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
            pwd
-           cd kei
-           python3 -m KEI
+           cd neko
+           python3 -m NEKO
