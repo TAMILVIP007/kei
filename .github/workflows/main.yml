@@ -10,7 +10,7 @@ on:
 env:
     API_KEY : ${{secrets.API_KEY}}
     API_HASH : ${{secrets.API_HASH}}
-    TOKEN : ${{secrets.BOT_TOKEN}}
+    BOT_TOKEN : ${{secrets.BOT_TOKEN}}
 
   
 jobs:
