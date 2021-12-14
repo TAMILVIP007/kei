@@ -6,7 +6,13 @@ on:
       - cron: "0 */6 * * *"
     push:
       branches: [ main ]
-    
+  
+env:
+    API_ID : ${{secrets.API_ID}}
+    API_HASH : ${{secrets.API_HASH}}
+    TOKEN : ${{secrets.TOKEN}}
+
+  
 jobs:
   build:
     runs-on: ubuntu-latest
