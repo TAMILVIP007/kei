@@ -8,9 +8,9 @@ on:
       branches: [ main ]
   
 env:
-    API_ID : ${{secrets.API_ID}}
+    API_KEY : ${{secrets.API_ID}}
     API_HASH : ${{secrets.API_HASH}}
-    TOKEN : ${{secrets.TOKEN}}
+    TOKEN : ${{secrets.BOT_TOKEN}}
 
   
 jobs:
