@@ -41,5 +41,5 @@ jobs:
          run: |
            curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
            pwd
-           cd neko
-           python3 -m NEKO
+           cd ub
+           python3 -m ub
