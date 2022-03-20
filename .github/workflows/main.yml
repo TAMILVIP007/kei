@@ -1,4 +1,4 @@
-name : NekoChan
+name : Music
 
 
 on:
@@ -10,7 +10,7 @@ on:
 env:
     API_KEY : ${{secrets.API_KEY}}
     API_HASH : ${{secrets.API_HASH}}
-    BOT_TOKEN : ${{secrets.BOT_TOKEN}}
+    SESSION : ${{secrets.SESSION}}
 
   
 jobs:
@@ -33,7 +33,7 @@ jobs:
        - name: cloning repo and install
          continue-on-error: true
          run: |
-           git clone https://tamilvip007:${{ secrets.GIT_TOKEN }}@github.com/Tamilvip007/NekoChan neko && cd neko && pip3 install -r requirements.txt
+           git clone https://tamilvip007:${{ secrets.GIT_TOKEN }}@github.com/Tamilvip007/musicub ub && cd ub && pip3 install -r requirements.txt
            pwd
        - name: Running
          timeout-minutes: 350
